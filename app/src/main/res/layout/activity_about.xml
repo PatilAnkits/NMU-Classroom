@@ -1,0 +1,92 @@
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F2F2"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="NMU"
+            android:id="@+id/tvAppName"
+            android:textColor="#830000"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <View
+            android:layout_below="@id/tvAppName"
+            android:id="@+id/custView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_300"/>
+        <TextView
+            android:id="@+id/tvDevName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_below="@id/custView"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:text="Developed By :"
+            android:textSize="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDevAnkit"
+            android:layout_width="match_parent"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="3dp"
+            android:layout_below="@id/tvDevName"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:text="Amit patil"/>
+
+                <TextView
+                    android:id="@+id/devn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#363636"
+                    android:textSize="16sp"
+                    android:text="SSBT College of engineearing bambhori, jalgaon
+"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDevPiyush"
+            android:layout_width="match_parent"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="3dp"
+            android:layout_below="@id/cardDevAnkit"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:background="@drawable/dialog_bac"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:text="Exit ?"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Are you sure you want to quit "
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+         />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/no"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:textColor="#830000"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/dialog_back"
+        android:text="No "/>
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_style"
+        android:text="Yes"
+        android:textColor="#fff" />
+</LinearLayout>
+
+</LinearLayout>

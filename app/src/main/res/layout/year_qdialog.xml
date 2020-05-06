@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:weightSum="2"
+    android:background="@drawable/dialog_bac"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Year "
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0">
+    <Button
+        android:id="@+id/dialog_btn_fyear"
+        android:layout_width="70dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_style"
+        android:text="FE"/>
+
+    <Button
+        android:id="@+id/dialog_btn_syear"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_style"
+        android:text="SE"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/dialog_btn_tyear"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+        android:background="@drawable/button_style"
+        android:padding="8dp"
+        android:text="TE"
+        android:textColor="#fff" />
+    <Button
+        android:id="@+id/dialog_btn_Byear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_weight="0.5"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_style"
+        android:text="BE"/>
+    </LinearLayout>
+
+</LinearLayout>

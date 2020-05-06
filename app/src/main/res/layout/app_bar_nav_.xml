@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class = "com.fragment.NavigationDrawerFragment"
+    tools:context=".PostViwer">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app"
+        android:showDividers="middle"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/finallogo"
+                     />
+            <TextView
+                android:text="NMU"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/activity_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app" />
+
+</RelativeLayout>
